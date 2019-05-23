@@ -9,8 +9,9 @@ class MyApp extends Component {
     return (
       <div className="App">
       
-        <InfoBar/>
+        
         <TheGame />
+       
         
       </div>
     );
