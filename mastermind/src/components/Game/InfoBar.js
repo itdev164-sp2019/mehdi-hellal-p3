@@ -10,7 +10,9 @@ const InfoBar = () => (
       <h1 className="info-bar__title">
         React Mastermind
       </h1>
-     
+      <h2 className="info-bar__subtitle">
+        
+      </h2>
     </div>
   </div>
 );
