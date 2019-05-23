@@ -8,8 +8,10 @@ class MyApp extends Component {
   render() {
     return (
       <div className="App">
-        
+      
+        <InfoBar/>
         <TheGame />
+        
       </div>
     );
   }
