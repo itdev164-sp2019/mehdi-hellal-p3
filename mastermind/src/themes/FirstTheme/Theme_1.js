@@ -51,17 +51,29 @@ const defaults ={
         border: theme.borders[0],
         height: '100%',
         width: '100%',
+        textAlign: 'right',
+        background:'#ff9232',
+        margin: `0 auto`,
+        display: `inline-block`,
+        padding: `1.45rem 1.0875rem`,
+        
+       
              
     },
     main:{
         border: theme.borders[0],
         height: '100%',
         width: '100%',
+        backgroundColor: `#a85502`,
         
     },
     header:{
     height: '100%',
     width: '100%',
+    marginBottom: `1.45rem`,
+    margin: `0 auto`,
+    
+    padding: `1.45rem 1.0875rem`,
     }
 
 
@@ -74,6 +86,7 @@ const variants = {
             color: theme.colors.primary.main,
             borderColor: theme.colors.primary.main,
            // background: 'white'
+           margin: `10px`
         },
         contrast:{
             ...defaults.button,
@@ -86,7 +99,7 @@ const variants = {
             ...defaults.footer,
             color: theme.colors.primary.main,
             //borderColor: theme.colors.primary.main,
-            background: 'white'
+            //background: 'white'
         },
         contrast:{
             ...defaults.footer,
@@ -100,7 +113,8 @@ const variants = {
             ...defaults.header,
             color: theme.colors.primary.main,
             borderColor: theme.colors.primary.main,
-            background: 'white'
+            background: '#ff9232',
+            textAlign:'center'
         },
         contrast:{
             ...defaults.button,
@@ -114,7 +128,7 @@ const variants = {
             ...defaults.main,
             color: theme.colors.primary.main,
             borderColor: theme.colors.primary.main,
-            background: 'white'
+           // background: 'white'
         },
         contrast:{
             ...defaults.main,

@@ -141,8 +141,8 @@ class Game extends React.Component {
           guesses={9-this.state.currentRow}
           hasWon={this.state.hasWon}
         />
-        <table className="board">
-          <tbody>
+        <div className="board">
+          <div>
             <tr>
               <td></td>
               <td className="game__code">
@@ -165,9 +165,9 @@ class Game extends React.Component {
                 />
               ))
             }
-            <tr>
-              <td></td>
-              <td className="options-outer">
+            <div>
+              <div></div>
+              <div className="options-outer">
                 <div className="options-inner">
                   <div className="options">
                   {
@@ -182,10 +182,10 @@ class Game extends React.Component {
                   }
                   </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

@@ -45,7 +45,10 @@
   
   .board {
     display: inline-block;
-    margin-top: 30px;
+    margin: 30px;
+    padding: 10px;
+    background: brown;
+    
   }
   
   .slot-group {
@@ -55,17 +58,17 @@
   
   .slot {
     display: block;
-    width: 35px;
-    height: 35px;
-    margin: 0 2px;
-    background-color: rgb(46, 46, 46);
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    background-color: #3E3E3E;
     border-radius: 50%;
   }
   
   .slot--active {
-    cursor: pointer;
+    cursor:pointer;
     transition: 0.3s;
-    background-color: #3E3E3E;
+    background-color: rgb(175, 170, 170);
   }
   
   .slot--active:hover {
@@ -76,7 +79,7 @@
   .row__check {
     border-style: none;
     text-transform: lowercase;
-    color: rgb(105, 163, 141);
+    color: rgba(110, 241, 50, 0.932);
     font-size: 1.3em;
     background: none;
     cursor: pointer;
@@ -86,7 +89,7 @@
   }
   
   .row__check:hover {
-    color: rgb(150, 233, 201);
+    color: rgb(22, 128, 31);
   }
   
   .row__check:disabled {
@@ -108,17 +111,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    margin: 10px 0;  
+    margin: 30px 30px;  
   }
   
   .option {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     box-sizing: border-box;
     transition: 0.3s;
+    margin: 5px;
   }
   
   .option:hover,
@@ -157,8 +161,8 @@
   }
   
   .color-7 {
-    background-color: #E2C5A6;
-    box-shadow: 0 0 4px #E2C5A6;
+    background-color: rgb(232, 245, 59);
+    box-shadow: 0 0 4px rgb(232, 245, 59);
   }
   
   .color-8 {
@@ -168,30 +172,31 @@
   
   .clue-group {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     list-style: none;
     padding: 0;
+    
   }
   
   .clue {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
   }
   
   .clue--0 {
-    background-color: rgb(46, 46, 46);
+    background-color: #bdbbba;
   }
   
   .clue--1 {
-    background-color: #a8a8a8;
+    background-color: #fc9230;
     box-shadow: 0 0 3px white;
   }
   
   .clue--2 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(19, 206, 75);
     box-shadow: 0 0 3px rgb(85, 85, 85);
   }
   
