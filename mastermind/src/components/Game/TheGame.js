@@ -4,9 +4,10 @@ import Row from './Row';
 import Option from './Option';
 import SlotGroup from './SlotGroup';
 import GameOver from './GameOver';
+import InfoBar from './InfoBar.js'
 
 
-class Game extends React.Component {
+class TheGame extends React.Component {
 
   constructor(props) {
     super(props);
@@ -141,6 +142,9 @@ class Game extends React.Component {
           guesses={9-this.state.currentRow}
           hasWon={this.state.hasWon}
         />
+        <InfoBar
+        newGame={this.newGame}
+        />
         <div className="board">
           <div>
             <tr>
@@ -191,4 +195,4 @@ class Game extends React.Component {
   }
 }
 
-export default Game;
+export default TheGame;

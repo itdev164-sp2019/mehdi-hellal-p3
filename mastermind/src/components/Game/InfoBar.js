@@ -1,9 +1,13 @@
 import React from 'react';
 import {Button} from '../Element'
 import logo from '../../images/logo.svg';
+import Dialog from '../User/Dialog'
 
 
-const InfoBar = () => (
+
+
+
+const InfoBar = (props) => (
   <div className="info-bar">
     <img src={logo} className="info-bar__logo" alt="logo" />
     <div className="info-bar__text">
@@ -21,11 +25,15 @@ const InfoBar = () => (
     </div>
     <div >
     
-      <Button >Info</Button>
-      <Button >New Game</Button>
-      <Button>Exit</Button>
-      </div>  
+      <Dialog/>
+    </div> 
+    <Button onClick={props.newGame}>Reset</Button>
+    
   </div>
+  
 );
+
+
+  
 
 export default InfoBar;
