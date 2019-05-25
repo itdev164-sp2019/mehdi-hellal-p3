@@ -85,7 +85,7 @@ const variants = {
             ...defaults.button,
             color: theme.colors.primary.main,
             borderColor: theme.colors.primary.main,
-           // background: 'white'
+            background: '#ffdc6b',
            margin: `10px`
         },
         contrast:{

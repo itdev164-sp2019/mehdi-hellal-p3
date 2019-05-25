@@ -1,20 +1,24 @@
 import React, { Component } from 'react'
-import {BaseContainer } from '../Element'
+import {Button } from '../Element'
+
 
 let dialogStyles ={
     width: '500px',
-    maxWidth: '100%',
-    margin:'0 auto',
+    height:'500px',
+    //maxWidth: '100%',
+    margin:'auto',
     position:'fixed',
-    left:'50%',
-    top:'50%',
-    transform:'translate (-50%,50%)',
-    zIndex:'999',
-    backgroundColor:'#eee',
-    padding:'10px 20px 40px',
-    borderRadius:'8%',
-    display:'flex',
-    flexDirection:'30px',
+    left:'5%',
+    top:'30%',
+    //transform:'translate (-50%,50%)',
+    //zIndex:'999',
+    backgroundColor:'#ffdc6b',
+    padding:'20px 40px',
+    borderRadius:'10%',
+    //display:'flex',
+    //flexDirection:'30px',
+    //fontSize:'18px',
+    lineHeight: '1.5',
 };
 
 let dialogCloseButtonStyles ={
@@ -26,7 +30,7 @@ let dialogCloseButtonStyles ={
     width: '30px',
     height:'30px',
     fontWeight:'bold',
-    alignSelf:'flex-end'
+    float:'right',
     
 };
 
@@ -37,7 +41,7 @@ class Info extends Component {
         let info =(
             <div style={dialogStyles}> 
 
-            <button style={dialogCloseButtonStyles} onClick={this.props.onClose}>X</button>
+            <Button style={dialogCloseButtonStyles} onClick={this.props.onClose}>X</Button>
             
             <div>{this.props.children}</div>
 
@@ -49,8 +53,7 @@ class Info extends Component {
         }
 
         return(
-            <div>{info}</div>
-           
+            <div>{info}</div>          
             
 
         );
